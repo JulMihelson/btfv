@@ -48,6 +48,7 @@
 :root {
   --main-color: #b59d5a;
   --primary-accent: rgba(78, 86, 50, 0.86);
+  --brand-grey: #676767;
   --white: #fff;
   --transition-duration: 250ms;
   --transition-cubic: cubic-bezier(0.4, 0, 0.2, 1);

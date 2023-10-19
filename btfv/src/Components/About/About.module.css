@@ -1,0 +1,63 @@
+.aboutContainer {
+  max-width: 100vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../../assets/images/grunge_background.png);
+}
+.aboutGlobalContainer {
+  max-width: 100vw;
+  position: relative;
+  display: flex;
+  max-height: 950px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  /* justify-content: space-between; */
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-left: 160px;
+  margin-right: 160px;
+  gap: 50px;
+}
+.textBlock {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 575px;
+}
+.aboutTitle {
+  font-family: inherit;
+  text-transform: uppercase;
+  font-size: 45px;
+  font-weight: 500;
+  color: black;
+}
+.aboutText {
+  font-family: inherit;
+  font-size: 18px;
+  color: var(--brand-grey);
+  font-weight: 500;
+  text-align: justify;
+  margin-bottom: 15px;
+  line-height: calc(28 / 18);
+}
+.accentText {
+  color: var(--main-color);
+  font-size: 18px;
+  font-weight: 600;
+}
+.accentTitle {
+  color: var(--main-color);
+  font-size: 22px;
+  font-weight: 600;
+}
+.line {
+  border-bottom: 4px solid var(--main-color);
+  margin-top: 10px;
+  margin-bottom: 15px;
+  width: 60px;
+  /* height: 2px;
+  background-color: var(--main-color);
+  line-height: 2px; */
+}
