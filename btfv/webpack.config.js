@@ -42,7 +42,7 @@ module.exports = {
     extensions: ['.js', '.jsx'],
     alias: {
       // Додайте аліаси для вашого контенту
-      '@images': path.resolve(__dirname, 'src/assets/images'),
+      '@images': path.resolve(__dirname, 'src/assets/images/activities_posts'),
     },
   },
   devServer: {
