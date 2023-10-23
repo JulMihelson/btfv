@@ -1,0 +1,64 @@
+.ideaContainer {
+  max-width: 100vw;
+  position: relative;
+  display: flex;
+  max-height: 950px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 40px;
+  margin-left: 160px;
+  margin-right: 160px;
+  gap: 50px;
+}
+.mainIdeasBlock {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.missionItems {
+  max-width: 369px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.colorRound {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 99%;
+  background-color: var(--primary-accent);
+}
+.ideaIcon {
+  padding: 20px;
+  fill: var(--white);
+}
+.gearIcon {
+  padding: 15px;
+  fill: var(--white);
+}
+.mission {
+  font-size: 22px;
+  font-weight: 500;
+  color: black;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.missionDescription {
+  font-size: 17px;
+  color: var(--brand-grey);
+}
+.missionText {
+  text-align: center;
+}
+.line {
+  border-bottom: 1px solid var(--main-color);
+  margin-top: 10px;
+  margin-bottom: 15px;
+  width: 100%;
+}

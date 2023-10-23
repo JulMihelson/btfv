@@ -1,6 +1,7 @@
 import css from "./About.module.css";
 import sprite from "../../assets/svg/sprite.svg";
 import image from "../../assets/images/about_image.jpg";
+import MainAim from "../MainAim/MainAim";
 
 const About: React.FC = () => {
   return (
@@ -46,6 +47,7 @@ const About: React.FC = () => {
           <p className={css.accentTitle}>BTFV. Кожен герой на своєму фронті!</p>
         </div>
       </div>
+      <MainAim />
     </div>
   );
 };

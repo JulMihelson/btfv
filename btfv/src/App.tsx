@@ -4,6 +4,7 @@ import "../src/assets/global.css";
 import Header from "./Components/Header/Header";
 import Hero from "./Hero/Hero";
 import About from "./Components/About/About";
+import Activity from "./Components/Activity/Activity";
 
 const App: React.FC = () => {
   return (
@@ -11,6 +12,7 @@ const App: React.FC = () => {
       <Header />
       <Hero />
       <About />
+      <Activity />
     </>
   );
 };
