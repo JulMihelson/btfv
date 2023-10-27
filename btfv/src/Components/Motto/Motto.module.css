@@ -1,0 +1,70 @@
+.mottoGlobalContainer {
+  background-color: var(--primary-accent);
+  padding-bottom: 60px;
+}
+.mottoContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 25px;
+}
+
+.mottoTitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative; /* Додайте це */
+}
+
+.punchIcon {
+  width: 70px;
+  height: 70px;
+}
+
+.mottoContainer::before {
+  content: "";
+  position: absolute;
+  width: 35%;
+  height: 0.5px;
+  background: var(--main-color);
+  left: 170px;
+}
+.mottoContainer::after {
+  content: "";
+  position: absolute;
+  width: 35%;
+  height: 0.5px;
+  background: var(--main-color);
+  right: 170px;
+}
+
+.mottoContainer svg {
+  z-index: 2;
+}
+.motto {
+  text-align: center;
+  color: var(--white);
+  font-size: 24px;
+  font-weight: 500;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: calc(40 / 24);
+}
+
+.accentText {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--main-color);
+}
+
+.mottoGlobalContainer .fake::after {
+  content: "";
+  position: absolute;
+  height: 0.5px;
+  background: var(--main-color);
+  right: 170px;
+  left: 170px;
+  margin-top: 35px;
+}
