@@ -7,7 +7,6 @@
   flex-wrap: wrap;
   align-items: center;
   padding-top: 30px;
-  padding-bottom: 40px;
   margin-left: 160px;
   margin-right: 160px;
   gap: 50px;
@@ -17,7 +16,7 @@
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }
 .missionItems {
   max-width: 369px;

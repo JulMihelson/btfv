@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import css from "./Header.module.css";
 import logo from "../../assets/logo_btfv_white.png";
-import sprite from "../../assets/svg/sprite.svg";
+// import sprite from "../../assets/svg/sprite.svg";
 import BurgerMenu from "../BurgerMenu/BurgerMenu";
 import { useMediaQuery } from "react-responsive";
+import { SocialMediaIcons } from "../SocialMedia/SocialMediaBlock";
 
 interface iProps {
   className: string;
@@ -26,7 +27,8 @@ const Header: React.FC = () => {
             <li className={css.headerMenuItems}>галерея</li>
             <li className={css.headerMenuItems}>контакти</li>
           </ul>
-          <ul className={css.socialMediaIcons}>
+          <SocialMediaIcons />
+          {/* <ul className={css.socialMediaIcons}>
             <li>
               <svg className={css.instaLogo} width={40} height={40}>
                 <use xlinkHref={sprite + "#instagram_logo"} />
@@ -37,7 +39,7 @@ const Header: React.FC = () => {
                 <use xlinkHref={sprite + "#facebook_logo"} />
               </svg>
             </li>
-          </ul>
+          </ul> */}
           {!isDesktop && (
             <BurgerMenu
               // className={css.burgerMenu}

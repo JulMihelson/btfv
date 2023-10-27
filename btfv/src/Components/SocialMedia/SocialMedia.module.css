@@ -1,0 +1,13 @@
+.socialMediaIcons {
+  margin-left: 10px;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+.instaLogo {
+  fill: #b59d5a;
+}
+.fbLogo {
+  fill: #b59d5a;
+}
