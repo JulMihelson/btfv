@@ -1,0 +1,105 @@
+.resultsContainer {
+  display: flex;
+  flex-direction: column;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../../assets/images/grunge_background.png);
+  padding-top: 60px;
+  padding-bottom: 100px;
+}
+
+.resultsTitle {
+  font-family: inherit;
+  text-transform: uppercase;
+  font-size: 45px;
+  font-weight: 500;
+  color: black;
+  margin-top: 30px;
+}
+.resultsHead {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.infoBlock {
+  display: flex;
+}
+.infoTextBackground {
+  max-width: 530px;
+  background-image: url(../../assets/images/results_image.jpg);
+  padding-left: 40px;
+  padding-right: 40px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: -50px;
+}
+
+.infoText {
+  max-width: 450px;
+  font-size: 20px;
+  text-align: start;
+  color: white;
+  font-weight: 600;
+}
+
+.accentText {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--main-color);
+}
+.infoGrid {
+  box-sizing: border-box;
+  width: calc(100% - 530px);
+  display: flex;
+  flex-wrap: wrap;
+}
+.gridItem {
+  box-sizing: border-box;
+  width: 50%;
+  padding-left: 30px;
+  padding-right: 30px;
+  min-height: 249px;
+  background-color: var(--main-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.iconBackground {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  border-radius: 999px;
+}
+.iconGrid {
+  padding: 15px;
+}
+
+.text {
+  color: black;
+  font-weight: 500;
+  font-size: 26px;
+  text-align: center;
+}
+.text span {
+  font-weight: 600;
+}
+
+ul.infoGrid .gridItem {
+  background-color: white;
+}
+
+ul.infoGrid .gridItem:nth-child(1),
+ul.infoGrid .gridItem:nth-child(4),
+ul.infoGrid .gridItem:nth-child(5),
+ul.infoGrid .gridItem:nth-child(8) {
+  background-color: var(--main-color);
+}

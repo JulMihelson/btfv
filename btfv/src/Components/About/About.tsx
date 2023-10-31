@@ -12,7 +12,7 @@ const About: React.FC = () => {
             className={css.aboutImage}
             src={image}
             width={575}
-            height={900}
+            height={800}
             alt="Баггі для військових від фонду BTFV"
           ></img>
         </div>

@@ -51,6 +51,7 @@
   color: var(--main-color);
   font-size: 22px;
   font-weight: 600;
+  margin-top: 30px;
 }
 .line {
   border-bottom: 3px solid var(--main-color);

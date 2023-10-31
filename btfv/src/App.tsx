@@ -6,6 +6,7 @@ import Hero from "./Hero/Hero";
 import About from "./Components/About/About";
 import Activity from "./Components/Activity/Activity";
 import Motto from "./Components/Motto/Motto";
+import Results from "./Components/Results/Results";
 
 const App: React.FC = () => {
   return (
@@ -15,6 +16,7 @@ const App: React.FC = () => {
       <About />
       <Activity />
       <Motto />
+      <Results />
     </>
   );
 };
