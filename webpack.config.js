@@ -39,7 +39,7 @@ module.exports = {
     }),
   ],
   resolve: {
-    extensions: ['.js', '.jsx'],
+    extensions: ['.js', '.jsx', '.tsx'],
     alias: {
       // Додайте аліаси для вашого контенту
       '@images': path.resolve(__dirname, 'src/assets/images/activities_posts'),
