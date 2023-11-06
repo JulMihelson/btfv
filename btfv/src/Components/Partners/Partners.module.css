@@ -1,0 +1,34 @@
+.partnersGlobalContainer {
+  background-color: var(--primary-accent);
+  padding-bottom: 100px;
+}
+.partnersContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 25px;
+  flex-direction: column;
+}
+
+.partnersTitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 45px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.punchIcon {
+  width: 70px;
+  height: 70px;
+}
+
+.line {
+  border-bottom: 3px solid var(--main-color);
+  margin-top: 10px;
+  margin-bottom: 15px;
+  width: 60px;
+}
