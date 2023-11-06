@@ -7,32 +7,32 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
   },
-  module: {4
-    rules: [
-      {
-        test: /\.(js|jsx)$,
-        exclude: /node_modules/,
-        use: {
-          loader: 'babel-loader',
-        },
+  module: {
+  rules: [
+    {
+      test: /\.(js|jsx)$,
+      exclude: /node_modules/,
+      use: {
+        loader: 'babel-loader',
       },
-      {
-        test: /\.(png|jpe?g|gif)$/i,
-        use: [
-          {
-            loader: 'file-loader',
-            options: {
-              name: 'images/[name].[ext]',
-            },
+    },
+    {
+      test: /\.(png|jpe?g|gif)$/i,
+      use: [
+        {
+          loader: 'file-loader',
+          options: {
+            name: 'images/[name].[ext]',
           },
-        ],
-      },
-      {
-        test: /\.css$/,
-        use: ['style-loader', 'css-loader'],
-      },
-    ],
-  },
+        },
+      ],
+    },
+    {
+      test: /\.css$/,
+      use: ['style-loader', 'css-loader'],
+    },
+  ],
+},
   plugins: [
     new HtmlWebpackPlugin({
       template: './public/index.html',
