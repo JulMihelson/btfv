@@ -6,10 +6,10 @@ import BurgerMenu from "../BurgerMenu/BurgerMenu";
 import { useMediaQuery } from "react-responsive";
 import { SocialMediaIcons } from "../SocialMedia/SocialMediaBlock";
 
-interface iProps {
-  className: string;
-  isOpen: boolean;
-}
+// interface iProps {
+//   className: string;
+//   isOpen: boolean;
+// }
 
 const Header: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -28,25 +28,8 @@ const Header: React.FC = () => {
             <li className={css.headerMenuItems}>контакти</li>
           </ul>
           <SocialMediaIcons />
-          {/* <ul className={css.socialMediaIcons}>
-            <li>
-              <svg className={css.instaLogo} width={40} height={40}>
-                <use xlinkHref={sprite + "#instagram_logo"} />
-              </svg>
-            </li>
-            <li>
-              <svg className={css.fbLogo} width={40} height={40}>
-                <use xlinkHref={sprite + "#facebook_logo"} />
-              </svg>
-            </li>
-          </ul> */}
-          {!isDesktop && (
-            <BurgerMenu
-              // className={css.burgerMenu}
-              setIsOpen={setIsOpen}
-              isOpen={isOpen}
-            />
-          )}
+
+          {!isDesktop && <BurgerMenu setIsOpen={setIsOpen} isOpen={isOpen} />}
         </div>
       </div>
     </header>

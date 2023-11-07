@@ -76,7 +76,7 @@ const CardCarousel: React.FC = () => {
         {posts.posts.map((post: IPost, index: number) => {
           const { text, date, images } = post;
           let position = "nextSlide";
-          let visibility = "hidden";
+          // let visibility = "hidden";
           if (index === currentIndex) {
             position = "activeSlide";
           }
