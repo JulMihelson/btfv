@@ -30,7 +30,9 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint:js": "eslint src/**/*.{js,jsx}",
-    "lint:ts": "eslint src/**/*.{ts,tsx}"
+    "lint:ts": "eslint src/**/*.{ts,tsx}",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build -m 'Automatically update gh-pages [skip ci]'"
   },
   "eslintConfig": {
     "extends": [
