@@ -31,13 +31,13 @@ const posts: IPosts = {
       date: "25 серпня 2023",
       images: post_2,
     },
-    // {
-    //   text: "Київ-Приморське-Харків-Лиман-Київ⏱42 години⛽️268 літрів палива🚐1837км 3 бойових бригадиВолонтери нашого фонду-спільноти при підтримці наших Партнерів @brpcentre.kiev.ua @the_future_of_polissya @iloveukrainecharity @car_wash_point менше, ніж за дві доби здійснили доставку майна по запитах трьох бойових бригад, а також забезпечили та розповсюдили 624 кг гуманітарної продовольчої допомоги постраждалому мирному населенню від військовоі агресії рф.",
-    //   date: "19 серпня 2023",
-    //   images: post_3,
-    // },
     {
-      text: "Спільно з <a href ='https://mpfund.org.ua/'>the_future_of_polissya</a> виконали доставку чергового автомобіля захисникам на східний напрямок, а також доставили 100 продуктових наборів ВПО.",
+      text: "Київ-Приморське-Харків-Лиман-Київ⏱42 години⛽️268 літрів палива🚐1837км 3 бойових бригадиВолонтери нашого фонду-спільноти при підтримці наших Партнерів @brpcentre.kiev.ua @the_future_of_polissya @iloveukrainecharity @car_wash_point менше, ніж за дві доби здійснили доставку майна по запитах трьох бойових бригад, а також забезпечили та розповсюдили 624 кг гуманітарної продовольчої допомоги постраждалому мирному населенню від військовоі агресії рф.",
+      date: "19 серпня 2023",
+      images: post_3,
+    },
+    {
+      text: "Спільно з <a href='https://mpfund.org.ua/'>the_future_of_polissya</a> виконали доставку чергового автомобіля захисникам на східний напрямок, а також доставили 100 продуктових наборів ВПО.",
       date: "27 липня 2023",
       images: post_4,
     },
@@ -48,8 +48,8 @@ const posts: IPosts = {
     },
   ],
 };
+
 const CardCarousel: React.FC = () => {
-  const [cards, setCards] = useState(posts);
   const [currentIndex, setCurrentIndex] = useState(0);
 
   // Function to handle clicking the left arrow
@@ -70,11 +70,11 @@ const CardCarousel: React.FC = () => {
         className={css.leftArrow}
         onClick={handleLeftArrowClick}
       >
-        <use xlinkHref={sprite + "#arrow-left"}></use>
+        <use href={`${sprite}#arrow-left`}></use>
       </svg>
       <div className={css.cardLine}>
         {posts.posts.map((post: IPost, index: number) => {
-          const { text, date } = post;
+          const { text, date, images } = post;
           let position = "nextSlide";
           let visibility = "hidden";
           if (index === currentIndex) {
@@ -83,22 +83,24 @@ const CardCarousel: React.FC = () => {
 
           if (
             index === currentIndex - 1 ||
-            (currentIndex === 0 && index === 5 - 1)
+            (currentIndex === 0 && index === posts.posts.length - 1)
           ) {
             position = "lastSlide";
           }
+
           return (
             <div className={`${position} ${css.cardBlock}`} key={index}>
               <Carousel autoplay>
-                {post.images.map((image, imageIndex) => (
-                  <img
-                    key={imageIndex}
-                    className={css.carouselImage}
-                    src={image}
-                    alt="Діяльність фонду BTFV"
-                    width={300}
-                    height={200}
-                  />
+                {images.map((image, imageIndex) => (
+                  <React.Fragment key={imageIndex}>
+                    <img
+                      className={css.carouselImage}
+                      src={image}
+                      alt="Діяльність фонду BTFV"
+                      width={300}
+                      height={200}
+                    />
+                  </React.Fragment>
                 ))}
               </Carousel>
               <div className={css.contentContainer}>
@@ -119,7 +121,7 @@ const CardCarousel: React.FC = () => {
         className={css.rightArrow}
         onClick={handleRightArrowClick}
       >
-        <use xlinkHref={sprite + "#arrow-right"}></use>
+        <use xlinkHref={`${sprite}#arrow-right`}></use>
       </svg>
     </div>
   );
