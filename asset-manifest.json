@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/btfv/static/css/main.48245cbe.css",
-    "main.js": "/btfv/static/js/main.58064c65.js",
+    "main.css": "/btfv/static/css/main.40e35248.css",
+    "main.js": "/btfv/static/js/main.d771ac91.js",
     "static/media/results_image.jpg": "/btfv/static/media/results_image.503a0554fe6d07662658.jpg",
     "static/media/hero_image.jpg": "/btfv/static/media/hero_image.e6192ab7f79886e27455.jpg",
     "static/media/photo_1.jpg": "/btfv/static/media/photo_1.ec9e544f9d23c3fb32f6.jpg",
@@ -14,11 +14,11 @@
     "static/media/sprite.svg": "/btfv/static/media/sprite.5f1dce2d7bd5a82d482bf19bb9570f7e.svg",
     "static/media/logo_btfv_white.png": "/btfv/static/media/logo_btfv_white.ff446a5e29e2df393d20.png",
     "index.html": "/btfv/index.html",
-    "main.48245cbe.css.map": "/btfv/static/css/main.48245cbe.css.map",
-    "main.58064c65.js.map": "/btfv/static/js/main.58064c65.js.map"
+    "main.40e35248.css.map": "/btfv/static/css/main.40e35248.css.map",
+    "main.d771ac91.js.map": "/btfv/static/js/main.d771ac91.js.map"
   },
   "entrypoints": [
-    "static/css/main.48245cbe.css",
-    "static/js/main.58064c65.js"
+    "static/css/main.40e35248.css",
+    "static/js/main.d771ac91.js"
   ]
 }
