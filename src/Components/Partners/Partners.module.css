@@ -1,5 +1,7 @@
 .partnersGlobalContainer {
+  background: url("../../assets/images/grunge_background.png");
   background-color: var(--primary-accent);
+  background-blend-mode: multiply;
   padding-bottom: 100px;
 }
 .partnersContainer {
@@ -19,6 +21,7 @@
   font-size: 45px;
   font-weight: 700;
   text-transform: uppercase;
+  margin-top: 20px;
 }
 
 .punchIcon {
@@ -29,6 +32,12 @@
 .line {
   border-bottom: 3px solid var(--main-color);
   margin-top: 10px;
-  margin-bottom: 15px;
+  margin-bottom: 60px;
   width: 60px;
+}
+.partnersList {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }

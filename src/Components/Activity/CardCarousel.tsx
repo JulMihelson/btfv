@@ -75,21 +75,9 @@ const CardCarousel: React.FC = () => {
       <div className={css.cardLine}>
         {posts.posts.map((post: IPost, index: number) => {
           const { text, date, images } = post;
-          let position = "nextSlide";
-          // let visibility = "hidden";
-          if (index === currentIndex) {
-            position = "activeSlide";
-          }
-
-          if (
-            index === currentIndex - 1 ||
-            (currentIndex === 0 && index === posts.posts.length - 1)
-          ) {
-            position = "lastSlide";
-          }
 
           return (
-            <div className={`${position} ${css.cardBlock}`} key={index}>
+            <div className={css.cardBlock} key={index}>
               <Carousel autoplay>
                 {images.map((image, imageIndex) => (
                   <React.Fragment key={imageIndex}>

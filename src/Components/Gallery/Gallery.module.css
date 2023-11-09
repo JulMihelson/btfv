@@ -1,0 +1,34 @@
+.galleryContainer {
+  display: flex;
+  flex-direction: column;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../../assets/images/grunge_background.png);
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+
+.galleryTitle {
+  font-family: inherit;
+  text-transform: uppercase;
+  font-size: 45px;
+  font-weight: 500;
+  color: black;
+  margin-top: 20px;
+}
+.galleryHead {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.infoBlock {
+  display: flex;
+}
+.line {
+  border-bottom: 3px solid var(--main-color);
+  margin-top: 10px;
+  margin-bottom: 15px;
+  width: 60px;
+}
