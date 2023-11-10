@@ -1,4 +1,3 @@
-import { Carousel } from "antd";
 import sprite from "../../assets/svg/sprite.svg";
 import css from "./Partners.module.css";
 import logo from "../../assets/images/poliss_future_logo.png";

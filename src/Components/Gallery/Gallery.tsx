@@ -12,7 +12,12 @@ const Gallery: React.FC = () => {
         <h2 className={css.galleryTitle}>галерея</h2>
         <div className={css.line}></div>
       </div>
-      <Carousel></Carousel>
+      <Carousel>
+        <img
+          src="../../assets/images/gallery_images/gallery_image_1.jpg"
+          alt="our monsters"
+        ></img>
+      </Carousel>
     </div>
   );
 };
