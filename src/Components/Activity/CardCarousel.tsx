@@ -52,14 +52,14 @@ const posts: IPosts = {
 const CardCarousel: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  // Function to handle clicking the left arrow
-  const handleLeftArrowClick = () => {
+  const prev = () => {
     setCurrentIndex((prevIndex) => prevIndex - 1);
+    console.log("prev", currentIndex);
   };
 
-  // Function to handle clicking the right arrow
-  const handleRightArrowClick = () => {
+  const next = () => {
     setCurrentIndex((prevIndex) => prevIndex + 1);
+    console.log("next", currentIndex);
   };
 
   return (
@@ -68,7 +68,9 @@ const CardCarousel: React.FC = () => {
         width="40"
         height="40"
         className={css.leftArrow}
-        onClick={handleLeftArrowClick}
+        onClick={() => {
+          prev();
+        }}
       >
         <use href={`${sprite}#arrow-left`}></use>
       </svg>
@@ -107,7 +109,9 @@ const CardCarousel: React.FC = () => {
         width="40"
         height="40"
         className={css.rightArrow}
-        onClick={handleRightArrowClick}
+        onClick={() => {
+          next();
+        }}
       >
         <use xlinkHref={`${sprite}#arrow-right`}></use>
       </svg>

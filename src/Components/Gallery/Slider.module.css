@@ -1,0 +1,57 @@
+.sliderBlock {
+  display: flex;
+  flex-direction: row;
+
+  min-width: 0;
+}
+
+.slider .slickList {
+  padding: 30px 0;
+
+  overflow: hidden;
+  min-width: 0;
+}
+.slider .slickSlide {
+  text-align: center;
+  padding: 40px 20px;
+  border: 1px solid green;
+}
+.slickSlide:nth-child(even) {
+  background-color: #ddd;
+}
+.slickSlide:nth-child(odd) {
+  background-color: #ccc;
+}
+.slickArrow {
+  z-index: 1;
+  width: 40px;
+  height: 40px;
+}
+
+.slickArrow:before {
+  font-size: 30px;
+}
+.slickNext {
+  right: 0;
+}
+.slickPrev {
+  left: 0;
+}
+
+.slider .btnWrap {
+  text-align: center;
+  width: 100%;
+}
+button {
+  background-color: #ddd;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  transition: all 0.5s;
+}
+button.slickDisabled {
+  opacity: 0.6;
+}
