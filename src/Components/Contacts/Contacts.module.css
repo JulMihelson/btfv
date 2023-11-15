@@ -98,4 +98,5 @@
 .contactBtn:hover,
 .contactBtn:focus {
   transform: scale(1.1);
+  transition: transform 250ms ease-in-out 0s;
 }

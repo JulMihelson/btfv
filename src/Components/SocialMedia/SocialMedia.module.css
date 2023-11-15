@@ -11,3 +11,10 @@
 .fbLogo {
   fill: #b59d5a;
 }
+.instaLogo:hover,
+.instaLogo:focus,
+.fbLogo:hover,
+.fbLogo:focus {
+  transform: scale(1.1);
+  transition: transform 250ms ease-in-out 0s;
+}

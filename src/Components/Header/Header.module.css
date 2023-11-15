@@ -32,15 +32,9 @@
   font-size: 17px;
   font-weight: 500;
 }
-.socialMediaIcons {
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-  gap: 15px;
-}
-.instaLogo {
-  fill: #b59d5a;
-}
-.fbLogo {
-  fill: #b59d5a;
+.headerMenuItems:hover,
+.headerMenuItems:focus {
+  transform: scale(1.1);
+  transition: transform 250ms ease-in-out 0s;
+  color: var(--main-color);
 }
