@@ -8,8 +8,8 @@ import Activity from "./Components/Activity/Activity";
 import Motto from "./Components/Motto/Motto";
 import Results from "./Components/Results/Results";
 import Partners from "./Components/Partners/Partners";
-
 import Gallery from "./Components/Gallery/Gallery";
+import Contacts from "./Components/Contacts/Contacts";
 
 const App: React.FC = () => {
   return (
@@ -22,6 +22,7 @@ const App: React.FC = () => {
       <Results />
       <Partners />
       <Gallery />
+      <Contacts />
     </>
   );
 };
