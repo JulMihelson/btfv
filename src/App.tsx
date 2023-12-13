@@ -8,7 +8,7 @@ import Activity from "./Components/Activity/Activity";
 import Motto from "./Components/Motto/Motto";
 import Results from "./Components/Results/Results";
 import Partners from "./Components/Partners/Partners";
-import Gallery from "./Components/Gallery/Gallery";
+// import Gallery from "./Components/Gallery/Gallery";
 import Contacts from "./Components/Contacts/Contacts";
 import Footer from "./Components/Footer/Footer";
 
@@ -22,7 +22,7 @@ const App: React.FC = () => {
       <Motto />
       <Results />
       <Partners />
-      <Gallery />
+      {/* <Gallery /> */}
       <Contacts />
       <Footer />
     </>
