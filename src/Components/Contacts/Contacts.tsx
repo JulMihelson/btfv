@@ -44,7 +44,7 @@ const Contacts: React.FC = () => {
             placeholder="Номер телефону *"
           ></input>
           <button className={css.contactBtn} type="submit">
-            Зв'язатися
+            Зв'язатися{" "}
           </button>
         </form>
       </div>
