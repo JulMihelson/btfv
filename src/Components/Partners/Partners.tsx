@@ -3,7 +3,7 @@ import css from "./Partners.module.css";
 import logo from "../../assets/images/poliss_future_logo.png";
 const Partners: React.FC = () => {
   return (
-    <div className={css.partnersGlobalContainer}>
+    <div id="partners" className={css.partnersGlobalContainer}>
       <div className={css.partnersContainer}>
         <svg className={css.punchIcon} width={70} height={70}>
           <use href={sprite + "#punch"}></use>

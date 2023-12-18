@@ -21,11 +21,31 @@ const Header: React.FC = () => {
           <img alt="BTFV logo" src={logo} width={201} height={83} />
 
           <ul className={css.headerMenu}>
-            <li className={css.headerMenuItems}>про нас</li>
-            <li className={css.headerMenuItems}>діяльність</li>
-            <li className={css.headerMenuItems}>партнери</li>
-            <li className={css.headerMenuItems}>галерея</li>
-            <li className={css.headerMenuItems}>контакти</li>
+            <li className={css.headerMenuItems}>
+              <a data-scroll href="#about_us">
+                про нас
+              </a>
+            </li>
+            <li className={css.headerMenuItems}>
+              <a data-scroll href="#activity">
+                діяльність
+              </a>
+            </li>
+            <li className={css.headerMenuItems}>
+              <a data-scroll href="#partners">
+                партнери
+              </a>
+            </li>
+            <li className={css.headerMenuItems}>
+              <a data-scroll href="#gallery">
+                галерея
+              </a>
+            </li>
+            <li className={css.headerMenuItems}>
+              <a data-scroll href="#contacts">
+                контакти
+              </a>
+            </li>
           </ul>
           <SocialMediaIcons />
 

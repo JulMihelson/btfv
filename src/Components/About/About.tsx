@@ -5,7 +5,7 @@ import MainAim from "../MainAim/MainAim";
 
 const About: React.FC = () => {
   return (
-    <div className={css.aboutContainer}>
+    <div id="about_us" className={css.aboutContainer}>
       <div className={css.aboutGlobalContainer}>
         <div>
           <img

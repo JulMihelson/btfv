@@ -8,11 +8,31 @@ const Footer: React.FC = () => {
       <div className={css.globalFooterContainer}>
         <img alt="BTFV logo" src={logo} width={123} height={123} />
         <ul className={css.footerMenu}>
-          <li className={css.footerMenuItems}>про нас</li>
-          <li className={css.footerMenuItems}>діяльність</li>
-          <li className={css.footerMenuItems}>партнери</li>
-          <li className={css.footerMenuItems}>галерея</li>
-          <li className={css.footerMenuItems}>контакти</li>
+          <li className={css.footerMenuItems}>
+            <a data-scroll href="#about_us">
+              про нас
+            </a>
+          </li>
+          <li className={css.footerMenuItems}>
+            <a data-scroll href="#activity">
+              діяльність
+            </a>
+          </li>
+          <li className={css.footerMenuItems}>
+            <a data-scroll href="#partners">
+              партнери
+            </a>
+          </li>
+          <li className={css.footerMenuItems}>
+            <a data-scroll href="#gallery">
+              галерея
+            </a>
+          </li>
+          <li className={css.footerMenuItems}>
+            <a data-scroll href="#contacts">
+              контакти
+            </a>
+          </li>
         </ul>
 
         <SocialMediaIcons />

@@ -11,7 +11,12 @@ import Partners from "./Components/Partners/Partners";
 import Gallery from "./Components/Gallery/Gallery";
 import Contacts from "./Components/Contacts/Contacts";
 import Footer from "./Components/Footer/Footer";
+import SmoothScroll from "smooth-scroll";
 
+export const scroll = new SmoothScroll('a[href*="#"]', {
+  speed: 1000,
+  speedAsDuration: true,
+});
 const App: React.FC = () => {
   return (
     <>

@@ -2,7 +2,7 @@ import css from "./Contacts.module.css";
 
 const Contacts: React.FC = () => {
   return (
-    <div className={css.contactsGlobalContainer}>
+    <div id="contacts" className={css.contactsGlobalContainer}>
       <h2 className={css.contactsTitle}>контакти</h2>
       <div className={css.line}></div>
       <div className={css.contactsContainer}>

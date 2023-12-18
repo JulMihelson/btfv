@@ -5,7 +5,7 @@ import CardCarousel from "./CardCarousel";
 
 const Activity: React.FC = () => {
   return (
-    <div className={css.activityContainer}>
+    <div id="activity" className={css.activityContainer}>
       <div className={css.activityHead}>
         <svg width={70} height={70}>
           <use href={sprite + "#punch"}></use>

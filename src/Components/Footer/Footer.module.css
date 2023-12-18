@@ -36,9 +36,9 @@
 }
 .footerMenuItems:hover,
 .footerMenuItems:focus {
+  color: var(--main-color);
   transform: scale(1.1);
   transition: transform 250ms ease-in-out 0s;
-  color: var(--main-color);
 }
 .accentText {
   color: var(--main-color);
