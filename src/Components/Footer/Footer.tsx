@@ -6,7 +6,7 @@ const Footer: React.FC = () => {
   return (
     <footer className={css.footerContainer}>
       <div className={css.globalFooterContainer}>
-        <img alt="BTFV logo" src={logo} width={123} height={123} />
+        <img alt="BTFV logo" className={css.footerLogo} src={logo} />
         <ul className={css.footerMenu}>
           <li className={css.footerMenuItems}>
             <a data-scroll href="#about_us">

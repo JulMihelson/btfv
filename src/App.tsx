@@ -20,7 +20,7 @@ export const scroll = new SmoothScroll('a[href*="#"]', {
 const App: React.FC = () => {
   return (
     <>
-      <Header />
+      {/* <Header />
       <Hero />
       <About />
       <Activity />
@@ -28,7 +28,7 @@ const App: React.FC = () => {
       <Results />
       <Partners />
       <Gallery />
-      <Contacts />
+      <Contacts /> */}
       <Footer />
     </>
   );

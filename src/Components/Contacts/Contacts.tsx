@@ -1,6 +1,27 @@
+import { useState } from "react";
 import css from "./Contacts.module.css";
 
 const Contacts: React.FC = () => {
+  const [nameForm, setNameForm] = useState("");
+
+  const [emailForm, setEmailForm] = useState("");
+
+  const [telForm, setTelForm] = useState("");
+
+  const requestInfo = {
+    name: nameForm,
+    email: emailForm,
+    tel: telForm,
+  };
+
+  const contactRequest = (event: { preventDefault: () => void }) => {
+    event.preventDefault();
+    setNameForm("");
+    setEmailForm("");
+    setTelForm("");
+    console.log("works");
+  };
+
   return (
     <div id="contacts" className={css.contactsGlobalContainer}>
       <h2 className={css.contactsTitle}>контакти</h2>
@@ -30,20 +51,41 @@ const Contacts: React.FC = () => {
           referrerPolicy="no-referrer-when-downgrade"
         ></iframe>
         <form className={css.contactForm}>
-          <input name="name" type="text" required placeholder="Ім'я *"></input>
+          <input
+            name="name"
+            type="text"
+            value={nameForm}
+            onChange={(event) => {
+              setNameForm(event.target.value);
+            }}
+            required
+            placeholder="Ім'я *"
+          ></input>
           <input
             name="email"
             type="email"
+            value={emailForm}
+            onChange={(event) => {
+              setEmailForm(event.target.value);
+            }}
             required
             placeholder="Електронна пошта *"
           ></input>
           <input
             name="tel"
             type="tel"
+            value={telForm}
+            onChange={(event) => {
+              setTelForm(event.target.value);
+            }}
             required
             placeholder="Номер телефону *"
           ></input>
-          <button className={css.contactBtn} type="submit">
+          <button
+            onSubmit={contactRequest}
+            className={css.contactBtn}
+            type="submit"
+          >
             Зв'язатися{" "}
           </button>
         </form>
