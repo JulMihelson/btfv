@@ -42,10 +42,9 @@ const Contacts: React.FC = () => {
           </div>
         </div>
         <iframe
+          className="css.map"
           title="map"
           src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2538.328726200027!2d30.467472176154786!3d50.49083938445543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sua!4v1700045276809!5m2!1sen!2sua"
-          width="570"
-          height="360"
           allowFullScreen={true}
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
