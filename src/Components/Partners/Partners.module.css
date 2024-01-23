@@ -2,15 +2,18 @@
   background: url("../../assets/images/grunge_background.png");
   background-color: var(--primary-accent);
   background-blend-mode: multiply;
-  padding-bottom: 100px;
+  padding-bottom: 40px;
+  position: relative;
+  box-sizing: border-box;
+  width: 100vw;
+  overflow: hidden;
 }
 .partnersContainer {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 40px;
-  padding-bottom: 25px;
   flex-direction: column;
+  padding: 25px 30px;
 }
 
 .partnersTitle {
@@ -18,8 +21,8 @@
   align-items: center;
   justify-content: center;
   color: white;
-  font-size: 45px;
-  font-weight: 700;
+  font-size: 20px;
+  font-weight: 500;
   text-transform: uppercase;
   margin-top: 20px;
 }
@@ -35,9 +38,79 @@
   margin-bottom: 60px;
   width: 60px;
 }
+.partnerLogo {
+  width: 170px;
+  height: 170px;
+  margin-bottom: 15px;
+}
 .partnersList {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
   align-items: center;
+}
+@media screen and (min-width: 375px) {
+  .partnersGlobalContainer {
+    padding-bottom: 50px;
+  }
+
+  .partnersTitle {
+    font-size: 22px;
+  }
+
+  .line {
+    border-bottom: 3px solid var(--main-color);
+    margin-top: 10px;
+    margin-bottom: 60px;
+    width: 60px;
+  }
+  .partnerLogo {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  svg {
+    width: 70px;
+    height: 70px;
+  }
+  .partnersTitle {
+    font-size: 30px;
+  }
+
+  .partnersList {
+    align-self: stretch;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+  }
+  .partnerLogo {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .partnersGlobalContainer {
+    padding-bottom: 70px;
+  }
+  .partnersContainer {
+    padding: 40px 0;
+  }
+
+  .partnersTitle {
+    font-size: 45px;
+    font-weight: 500;
+  }
+  .partnersList {
+    align-self: center;
+    justify-content: center;
+    gap: 0;
+  }
+  .partnerLogo {
+    width: 300px;
+    height: auto;
+  }
 }

@@ -12,21 +12,21 @@ const Partners: React.FC = () => {
         <div className={css.line}></div>
         <ul className={css.partnersList}>
           <li>
-            <img src={logo} alt="kjuj" width={150}></img>
+            <img src={logo} alt="kjuj" className={css.partnerLogo}></img>
           </li>
           <li>
-            <svg width={400}>
+            <svg className={css.partnerLogo}>
               <use href={sprite + "#military_post_logo"}></use>
             </svg>
           </li>
           <li>
-            <svg width={400}>
+            <svg className={css.partnerLogo}>
               <use href={sprite + "#craf_logo"}></use>
             </svg>
           </li>
 
           <li>
-            <svg width={400}>
+            <svg className={css.partnerLogo}>
               <use href={sprite + "#off_road_vol_logo"}></use>
             </svg>
           </li>
