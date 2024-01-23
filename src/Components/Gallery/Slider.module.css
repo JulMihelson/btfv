@@ -1,13 +1,15 @@
 .img {
   display: flex;
   margin: 0 auto;
-  height: 500px;
-  width: 360px;
+  height: auto;
+  width: 80%;
   margin-bottom: 15px;
 }
 .container {
+  box-sizing: border-box;
+  position: relative;
   margin: 0 auto;
   width: 90%;
-  height: 80vh;
+  height: fit-content;
   border-color: white;
 }

@@ -103,6 +103,7 @@ iframe {
   text-overflow: ellipsis;
   color: var(--white);
   width: 100%;
+  box-sizing: border-box;
 }
 .contactForm input:hover {
   transform: scale(1.1);
