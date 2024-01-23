@@ -30,10 +30,10 @@ const Contacts: React.FC = () => {
         <div className={css.contactsList}>
           <div className={css.address}>
             <div>адреса</div>
-            <div>контакти</div>
-          </div>
-          <div className={css.location}>
             <div>вул. Куренівська, 2Б м.Київ, Україна 04073</div>
+          </div>
+          <div className={css.contact}>
+            <div>контакти</div>
             <div className={css.emailLink}>
               <a href="mailto: btfvfoundation@gmail.com">
                 btfvfoundation@gmail.com
@@ -41,14 +41,15 @@ const Contacts: React.FC = () => {
             </div>
           </div>
         </div>
+
         <iframe
-          className="css.map"
           title="map"
-          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2538.328726200027!2d30.467472176154786!3d50.49083938445543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sua!4v1700045276809!5m2!1sen!2sua"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2538.3287262000295!2d30.467472176100422!3d50.490839384455384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cded4f8bd78d%3A0xd637740c7c468b0c!2sKurenivska%20St%2C%202%D0%91%2C%20Kyiv%2C%2002000!5e0!3m2!1sen!2sua!4v1705928411839!5m2!1sen!2sua"
           allowFullScreen={true}
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
         ></iframe>
+
         <form className={css.contactForm}>
           <input
             name="name"
